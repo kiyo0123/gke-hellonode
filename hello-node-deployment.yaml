@@ -12,7 +12,7 @@ spec:
         name: hello-node
     spec:
       containers:
-      - image: asia.gcr.io/fukudak-ocean/hello-node:v1
+      - image: asia.gcr.io/fukudak-playground/hello-node:v1
         name: hello-node
         ports:
         - containerPort: 8080
