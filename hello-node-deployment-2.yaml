@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    name: hello-node
+  name: hello-node-v2
+spec:
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        name: hello-node
+    spec:
+      containers:
+      - image: asia.gcr.io/fukudak-ocean/hello-node:v2
+        name: hello-node
+        ports:
+        - containerPort: 8080
+
